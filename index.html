@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Conscientização: Descarte de Lixo e Poluição de Rios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Projeto de Conscientização: Descarte Adequado de Lixo e Poluição de Rios</h1>
+            <p>Sua atitude faz a diferença para um Brasil mais limpo e saudável.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>A Poluição de Rios no Brasil: Um Alerta Urgente</h2>
+            <p>Os rios são as artérias do nosso planeta, essenciais para a vida e o equilíbrio dos ecossistemas. No Brasil, infelizmente, muitos de nossos rios sofrem com a poluição causada pelo descarte inadequado de lixo, esgoto doméstico e industrial.</p>
+            <p>Quando o lixo é jogado em rios, ele não apenas degrada a paisagem, mas também contamina a água, tornando-a imprópria para o consumo humano e animal. Além disso, a poluição afeta drasticamente a vida aquática, causando a morte de peixes e outras espécies, e desequilibrando todo o ecossistema.</p>
+            <p>Plásticos, pneus, garrafas, embalagens e até mesmo eletrodomésticos são frequentemente encontrados em nossos cursos d'água, levando anos para se decompor e liberando substâncias tóxicas. Essa realidade exige uma mudança urgente de hábitos e uma conscientização coletiva sobre a importância do descarte correto e da reciclagem.</p>
+        </section>
+
+        <section class="dados-lixo">
+            <h2>Dados Reais sobre o Descarte de Lixo no Brasil</h2>
+            <p>Compreender a dimensão do problema é o primeiro passo para a mudança. Veja alguns dados preocupantes sobre a geração e o descarte de lixo no Brasil:</p>
+            <ul>
+                <li><strong>Geração de Lixo:</strong> Em 2022, o Brasil gerou cerca de 83,5 milhões de toneladas de resíduos sólidos urbanos (RSU). (Fonte: Abrelpe - Panorama dos Resíduos Sólidos no Brasil 2022)</li>
+                <li><strong>Destinação Inadequada:</strong> Aproximadamente 40% de todo o lixo coletado no Brasil ainda é destinado a lixões a céu aberto ou aterros controlados, locais que não possuem as licenças ambientais e a infraestrutura adequada para tratamento de chorume e gases. Isso significa que milhões de toneladas de lixo contaminam o solo, o ar e os lençóis freáticos, que muitas vezes desaguam em rios. (Fonte: Abrelpe - Panorama dos Resíduos Sólidos no Brasil 2022)</li>
+                <li><strong>Potencial de Reciclagem:</strong> Estima-se que o Brasil poderia reciclar cerca de 30% a 40% do lixo que gera, mas a taxa de reciclagem efetiva é muito menor, girando em torno de 4%. (Fonte: Abrelpe, Cempre)</li>
+                <li><strong>Lixo no Mar e Rios:</strong> Uma parcela significativa do lixo descartado incorretamente em terra acaba chegando aos rios e, consequentemente, aos oceanos, causando danos incalculáveis à vida marinha e aos ecossistemas aquáticos.</li>
+                <li><strong>Custo da Poluição:</strong> A poluição dos rios gera custos elevados para o tratamento da água para consumo humano e impacta negativamente setores como o turismo e a pesca.</li>
+            </ul>
+            <p>Esses números mostram a urgência de mudarmos nossos hábitos de consumo e descarte para proteger nossos recursos hídricos.</p>
+        </section>
+
+        <section class="simulador-container">
+            <h2>Simulador de Descarte de Lixo</h2>
+            <p>Selecione o tipo de lixo e descubra qual a forma mais adequada de descarte:</p>
+            <label for="tipoLixo">Escolha o tipo de lixo:</label>
+            <select id="tipoLixo">
+                <option value="plastico">Plástico (garrafas PET, embalagens)</option>
+                <option value="papel">Papel (revistas, jornais, caixas)</option>
+                <option value="vidro">Vidro (garrafas, potes)</option>
+                <option value="metal">Metal (latas de alumínio, ferro)</option>
+                <option value="organico">Orgânico (restos de comida, cascas de frutas)</option>
+                <option value="eletronico">Eletrônico (celulares velhos, pilhas)</option>
+                <option value="pilhas">Pilhas e Baterias</option>
+                <option value="medicamento">Medicamentos Vencidos</option>
+            </select>
+            <button onclick="simularDescarte()">Descartar</button>
+            <div id="resultado-simulador"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Projeto de Conscientização. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
