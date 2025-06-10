@@ -89,3 +89,38 @@ footer {
     color: #2c3e50;
     font-size: 1.1em;
 }
+
+/* Novos estilos para a galeria */
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha em telas menores */
+    gap: 15px; /* Espaço entre as imagens */
+    margin-top: 20px;
+}
+
+.galeria img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.03); /* Leve zoom ao passar o mouse */
+}
+
+.legenda {
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Estilos para a seção de dicas de reciclagem */
+.dicas-reciclagem select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

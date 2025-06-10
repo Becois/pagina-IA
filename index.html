@@ -51,7 +51,33 @@
             </select>
             <button onclick="simularDescarte()">Descartar</button>
             <div id="resultado-simulador"></div>
+            <div id="pontuacao-simulador" style="margin-top: 15px;">Pontuação: <span id="pontos">0</span></div>
         </section>
+
+        <section class="dicas-reciclagem">
+            <h2>Dicas de Reciclagem por Região (Exemplo)</h2>
+            <p>A coleta seletiva pode variar. Escolha uma região para uma dica geral:</p>
+            <label for="regiao">Selecione uma Região:</label>
+            <select id="regiao" onchange="mostrarDicaLocal()">
+                <option value="">Selecione...</option>
+                <option value="sudeste">Sudeste</option>
+                <option value="sul">Sul</option>
+                <option value="nordeste">Nordeste</option>
+                <option value="centro-oeste">Centro-Oeste</option>
+                <option value="norte">Norte</option>
+            </select>
+            <div id="dica-local" style="margin-top: 15px; font-style: italic;"></div>
+        </section>
+
+        <section class="galeria-imagens">
+            <h2>Impacto Visual: Antes e Depois</h2>
+            <div class="galeria">
+                <img src="https://via.placeholder.com/400x250?text=Rio+Poluído" alt="Rio poluído">
+                <img src="https://via.placeholder.com/400x250?text=Rio+Limpo" alt="Rio limpo">
+            </div>
+            <p class="legenda">A poluição de rios é um problema real, mas a recuperação é possível com o descarte correto e a conscientização!</p>
+        </section>
+
     </div>
 
     <footer>
